@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS2 Showcase</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="top">
+    <div class="logo">CS2</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">Play on Steam</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/cs2.webp" alt="CS2" class="hero-img-fallback">
+
+    <video class="hero-video" src="assets/Counter-Strike 2 - Official Launch Trailer.mp4" autoplay loop muted playsinline></video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Welcome to CS2</h1>
+      <p>The evolution of competitive shooting</p>
+      <a href="#about" class="scroll-down">▼</a>
+    </div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About the Game</h2>
+    <p>Counter‑Strike 2 is the largest technical leap forward in Counter‑Strike’s history.</p>
+  </section>
+
+  <div class="parallax-banner" style="background-image:url('assets/parallax_smoke.webp');"></div>
+
+  <section id="media" class="reveal">
+    <h2>Media</h2>
+    <p>Explore in‑game visuals and new mechanics.</p>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/watch?v=nSE38xjMLqE" target="_blank">
+        <img src="assets/youtube1.png" alt="Watch on YouTube" class="social-logo">
+      </a>
+      <a href="https://x.com/CounterStrike" target="_blank">
+        <img src="assets/X_logo_2023_(white).png" alt="View on X" class="social-logo">
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <label class="show-pass">
+        <input type="checkbox" id="showPass" onclick="togglePassword()"> Show Password
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 CS2 Fan Project &bull; <a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+<div id="cookieBanner" class="cookie-banner" style="display: none;">
+  <p>We use cookies to ensure you get the best experience on our website.</p>
+  <button onclick="acceptCookies()">Accept</button>
+</div>
+
+</body>
+</html>
